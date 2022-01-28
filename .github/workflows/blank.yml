@@ -1,0 +1,15 @@
+name: TESTING
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run a multi-line script
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
