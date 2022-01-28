@@ -21,7 +21,7 @@ jobs:
         run: |
           echo THE TEST
           echo '----------------------------'
-          echo ${{ job.environment.name }}
+          echo ${{ job.environment }}
 
 
 
