@@ -24,7 +24,7 @@ jobs:
         run: |
           echo THE TEST
           echo '----------------------------'
-          echo ${{ github.env }}
+          echo ${{ job.container }}
 
 
 
